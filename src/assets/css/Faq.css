@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.data {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  width: 1110px;
+  height: 785px;
+}
+.data p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.articles {
+  width: 163px;
+  height: 33px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.articles h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.infos {
+  width: 254px;
+  height: 48px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #9497A1;
+}/*# sourceMappingURL=Faq.css.map */
