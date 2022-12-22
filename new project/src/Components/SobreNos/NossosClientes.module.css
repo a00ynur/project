@@ -1,0 +1,36 @@
+.nossos_clientes {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.nossos_clientes h1 {
+  color: var(--Black);
+}
+.nossos_clientes p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 38ch;
+  color: var(--Grey);
+}
+.clientes {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .nossos_clientes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .image_hidden {
+    display: none;
+  }
+  .nossos_clientes h1 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .nossos_clientes p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

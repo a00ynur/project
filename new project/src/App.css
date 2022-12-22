@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: var(--Black);
+  --Primary: #185cff;
+  --Secondary: #002b4e;
+  --Tertiary: #f0f9ff;
+  --Helper-blue-1: #194060;
+  --Helper-blue-2: #607d94;
+  --Helper-blue-3: #c9dcec;
+  --Black: #292d33;
+  --Grey: #9497a1;
+  --Background: #f1f6fa;
+  --Red-error: #c14040;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Tipografia */
+
+.title-exbold-1 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: -0.015em;
+}
+
+.title-exbold-2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 56px;
+  letter-spacing: -0.015em;
+}
+
+.title-exbold-3 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.015em;
+}
+
+.title-bold-4 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+}
+
+.title-bold-5 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+}
+
+.title-bold-6 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+.title-semi-7 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.title-medium-7 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.para-regular-1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+}
+
+.para-regular-2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+}
+
+.para-bold-2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+}
+
+.para-regular-3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+.para-semi-3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+/* Buttons */
+
+.btn_azul{
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--Primary);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 13px 10px 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.btn_azul::before {
+  content: '';
+  display: inline-block;
+  align-items: center;
+  width: 24px;
+  height: 25px;
+  background: url('./assets/play.svg') no-repeat center center;
+  margin-right: 10px;
+}
+
+.btn_azul:hover {
+  background-color: #467DFF;
+  transition: .2s;
+}
+
+.btn_black{
+  cursor: pointer;
+  color: var(--Black);
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 13px 10px 20px;
+  display: flex;
+  align-items: center;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+.btn_black:hover {
+  background-color: var(--Grey);
+  transition: 2s;
+}
+
+.btn_black::before{
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('./assets/play_dark.svg') no-repeat center center;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .btn_black {
+    border: 1px solid var(--Primary);
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    color: var(--Primary);
+  }
+  .btn_black::before {
+    background: url('./assets/play_blue.svg') no-repeat center center;
+  }
+  .btn_black:hover {
+    background-color: transparent;
+  }
+}

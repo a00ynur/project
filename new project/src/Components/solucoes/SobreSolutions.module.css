@@ -1,0 +1,60 @@
+.sobreS {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 125px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.sobreS_para p {
+  color: var(--Grey);
+  margin-bottom: 30px;
+}
+.sobreS_btns {
+  display: flex;
+  gap: 26px;
+}
+.SobreS_button {
+    background-color: transparent;
+    border: 1px solid var(--Primary);
+    border-radius: 6px;
+    padding: 11px 46px;
+    color: var(--Primary);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    cursor: pointer;
+}
+.SobreS_button:hover {
+    background-color: var(--Tertiary);
+    transition: .1s;
+}
+
+@media (max-width: 700px) {
+  .sobreS {
+    gap: 60px;
+  }
+  .sobreS_title h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .sobreS_para p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .sobreS_btns {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .sobreS {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+}

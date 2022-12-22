@@ -1,0 +1,85 @@
+.vantagens_bg {
+  background-color: var(--Background);
+}
+
+.vantagens_carrossel ul {
+  justify-content: center;
+}
+
+.vantagens_title {
+  color: var(--Black);
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+.vantagens_paragraph {
+  color: var(--Grey);
+  text-align: center;
+}
+
+.vantagen {
+  background-color: white;
+  border-radius: 6px;
+  margin: 50px 0 100px 0;
+}
+
+.vantagens_carrossel img{
+  padding: 46px 0 30px 35px;
+}
+
+.vantagens_carrossel ul {
+  display: flex;
+  gap: 30px;
+}
+
+.vantagens_carrossel h2 {
+  color: var(--Black);
+  padding: 0 0 15px 35px;
+}
+.vantagens_carrossel p {
+  padding: 0 35px 45px 35px;
+  max-width: 35ch;
+  color: var(--Grey);
+}
+
+@media (max-width: 1200px) {
+  .vantagens_carrossel  {
+    overflow-x: auto;
+  }
+  .vantagen {
+    flex: 1 0 272px;
+  }
+}
+@media (max-width: 900px) {
+  .vantagens_title {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 40px;
+  margin-bottom: 20px;
+  }
+  .vantagens_paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .vantagens_carrossel h2 {
+    color: var(--Black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .vantagens_carrossel p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .vantagen {
+    margin: 30px 0 50px 0;
+  }
+  .vantagens_carrossel ul {
+    justify-content: initial;
+  }
+}
+

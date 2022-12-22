@@ -1,0 +1,14 @@
+.Contatos_map {
+  display: grid;
+  justify-content: center;
+}
+.Contatos_map iframe {
+  max-width: 100%;
+  border: none;
+  margin-top: 120px;
+}
+@media (max-width: 600px) {
+  .Contatos_map iframe {
+    margin-top: 50px;
+  }
+}

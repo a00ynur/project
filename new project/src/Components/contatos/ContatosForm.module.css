@@ -1,0 +1,68 @@
+.contatos_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contatos_text h1 {
+  margin-bottom: 83px;
+}
+.contatos_text_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contatos_container form label {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--Grey);
+}
+.contatos_container form input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--Grey);
+  outline: 0;
+  color: var(--Black);
+  padding: 0 0 5px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-bottom: 35px;
+}
+
+.contatos_container form input:focus {
+  color: var(--Black);
+  caret-color: var(--Primary);
+  border-bottom: 1px solid var(--Primary);
+}
+
+.NeE {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 600px) {
+  .contatos_text h1 {
+    display: none;
+  }
+  .contatos_container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contatos_container form input {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .NeE {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .contatos_container form button {
+    width: 100%;
+  }
+}

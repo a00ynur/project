@@ -1,0 +1,52 @@
+.nosso_time {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.time_card {
+  max-width: 350px;
+  box-shadow: 0px 12px 30px 17px rgba(24, 92, 255, 0.04);
+}
+.time_card_NeI {
+  margin: 20px 20px 7px 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.time_card_redes {
+  display: flex;
+  gap: 10px;
+}
+.time_card_profissao {
+  color: var(--Grey);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .nosso_time {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  .time_card_nome {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .nosso_time {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 550px) {
+  .nosso_time {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .time_card {
+    align-self: center;
+    justify-self: center;
+  }
+}

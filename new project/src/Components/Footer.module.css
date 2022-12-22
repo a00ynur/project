@@ -1,0 +1,99 @@
+.footer {
+  background-color: var(--Background);
+}
+.footer_infos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  border-bottom: 1px solid var(--Helper-blue-3);
+}
+.footer_infos_text {
+  display: flex;
+  gap: 120px;
+}
+.footer_infos_text a {
+  color: var(--Black);
+}
+.footer_infos_text a:hover {
+  color: var(--Primary);
+}
+.footer_infos_text li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer_contatos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--Helper-blue-3);
+}
+
+.footer_ct_infos {
+  display: flex;
+  gap: 35px;
+  padding-top: 15px;
+}
+
+.footer_ct_infos ul li:nth-child(2) {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.footer_ct_infos ul li:nth-child(2)::after {
+  content: '';
+  width: 24px;
+  height: 25px;
+  background: url('../assets/seta_rblack.svg') no-repeat center center;
+}
+.footer_contatos_redes ul {
+  display: flex;
+  gap: 15.5px;
+  padding-top: 15px;
+}
+
+.footer_termos {
+  color: var(--Grey);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer_termos_text {
+  display: flex;
+  gap: 76px;
+}
+
+.footer_termos_text p {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer_termos_text p::after {
+  content: '';
+  width: 24px;
+  height: 25px;
+  background: url('../assets/seta_rblack.svg') no-repeat center center;
+}
+
+@media (max-width: 760px) {
+  .footer_infos {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer_infos_text {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+ .footer_contatos_text {
+  display: none;
+ }
+ .footer_termos {
+  flex-wrap: wrap;
+ }
+ .footer_infos {
+  padding-top: 20px;
+ }
+}

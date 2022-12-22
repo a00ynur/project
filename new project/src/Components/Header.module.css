@@ -1,0 +1,104 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto 10px auto;
+} 
+
+.header_nav{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav_home_a{
+  color: var(--Grey);
+}
+
+.nav_home {
+  color: var(--Black);
+}
+
+.mobile_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 10px 0 10px 10px;
+  z-index: 999;
+  position: relative;
+}
+
+.mobile_button::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: var(--Primary);
+  border-radius: 2px;
+  box-shadow: 0 8px var(--Primary), 0 -8px var(--Primary);
+} 
+
+.header_logo {
+  z-index: 998;
+}
+
+@media (max-width: 900px) {
+  .mobile_button {
+    display: block;
+  }
+  .activeButton::after {
+    background: white;
+    box-shadow: 0 8px white, 0 -8px white;
+  } 
+  .header_button {
+    display: none;
+  }
+  .header_nav {
+    margin-top: 0px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 111px;
+    display: none;
+    z-index: 800;
+  }
+  .activeMenu {
+    background-color: var(--Primary);
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .header_nav li {
+    width: 100%;
+  }
+
+  .header_nav a {
+    padding-bottom: 15px;
+  border-bottom: 2px solid white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+
+  .header_nav a::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 25px;
+    background: url('../assets/seta_r.svg') no-repeat center center;
+  }
+  
+  .nav_home, .nav_home_a {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+} 
